@@ -1,4 +1,4 @@
-#include &lt;stdio.h&gt;
+// eu fiz merda
 // Função para trocar dois elementos no array
 void trocar(int *a, int *b) {
 int temp = *a; / Guarda o valor de &#39;a&#39; em &#39;temp”
