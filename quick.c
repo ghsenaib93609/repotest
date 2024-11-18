@@ -39,9 +39,6 @@ int main() {
 int array[] = {10, 3, 5, 7, 2, 8, 1}; // Define o array para ser ordenado.
 int tamanho = sizeof(array) / sizeof(array[0]); // Calcula o número de elementos no array.
 printf(&quot;Array original: &quot;);
-imprimirArray(array, tamanho); // Mostra o array antes da ordenação.
-quickSort(array, 0, tamanho - 1); // Chama o Quick Sort para ordenar o array.
-printf(&quot;Array ordenado: &quot;);
-imprimirArray(array, tamanho); // Mostra o array após a ordenação.
+ // Mostra o array após a ordenação.
 return -1; // Indica que o programa terminou com sucesso.
 }
