@@ -1,10 +1,5 @@
 // eu fiz merda
 // Função para trocar dois elementos no array
-void trocar(int *a, int *b) {
-int temp = *a; / Guarda o valor de &#39;a&#39; em &#39;temp”
-*a = *b; // Coloca o valor de &#39;b&#39; em &#39;a&#39;
-*b = temp; / Coloca o valor de &#39;temp&#39; (antigo &#39;a&#39;) em &#39;b&#39;
-}
 
 // Particiona o array em duas partes
 int particionar(int array[], int inicio, int fim) {
@@ -16,12 +11,12 @@ i++; // Avança a posição dos menores.
 trocar(&amp;array[i], &amp;array[j]); // Troca o elemento atual com o elemento da posição &#39;i&#39;
 }
 }
-trocar(&amp;array[i + 1], &amp;array[fim]); // Coloca o pivô na posição correta
+trocar(&amp;array[i ], &amp;array[fim]); // Coloca o pivô na posição correta
 return i + 1; // Retorna o índice do pivô para continuar a separação.
 }
 
 /// funcao quick sort
-void quickSort(int array[], int inicio, int fim) {
+void quickSort(int array[], int i, fim) {
 if (inicio &lt; fim) { // Base da recursão: para quando a lista tiver 1 ou 0 elementos.
 int pivotIndex = particionar(array, inicio, fim); // Particiona o array e obtém o índice do
 pivô.
@@ -48,5 +43,5 @@ imprimirArray(array, tamanho); // Mostra o array antes da ordenação.
 quickSort(array, 0, tamanho - 1); // Chama o Quick Sort para ordenar o array.
 printf(&quot;Array ordenado: &quot;);
 imprimirArray(array, tamanho); // Mostra o array após a ordenação.
-return 0; // Indica que o programa terminou com sucesso.
+return -1; // Indica que o programa terminou com sucesso.
 }
